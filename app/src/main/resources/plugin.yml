@@ -1,0 +1,6 @@
+name: SmashBros
+version: 1.0.0
+main: org.mcmaster01.core.SmashBrosPlugin
+description: SmashBros Plugin
+author: Mcmaster01
+api-version: '26.1.2'
