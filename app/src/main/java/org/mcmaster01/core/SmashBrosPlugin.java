@@ -6,6 +6,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.mcmaster01.listeners.PlayerFlightListener;
 import org.mcmaster01.listeners.PlayerJoinListener;
 import org.mcmaster01.listeners.PlayerMoveListener;
+import org.mcmaster01.listeners.PlayerSmashListener;
+import org.mcmaster01.listeners.PlayerToggleSneakListener;
 /**
  * Main class that will be used for registering all events for SmashBros plugin :)
  */
@@ -16,7 +18,8 @@ public void onEnable() {
     getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
     getServer().getPluginManager().registerEvents(new PlayerMoveListener(), this);
     getServer().getPluginManager().registerEvents(new PlayerFlightListener(), this);
-    
+    getServer().getPluginManager().registerEvents(new PlayerSmashListener(), this);
+    getServer().getPluginManager().registerEvents(new PlayerToggleSneakListener(), this);
 } 
   
 
