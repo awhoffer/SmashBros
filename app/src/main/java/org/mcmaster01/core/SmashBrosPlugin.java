@@ -4,6 +4,8 @@
 package org.mcmaster01.core;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.mcmaster01.listeners.PlayerFlightListener;
+import org.mcmaster01.listeners.PlayerGrabListener;
+import org.mcmaster01.listeners.PlayerInteractEntityListener;
 import org.mcmaster01.listeners.PlayerJoinListener;
 import org.mcmaster01.listeners.PlayerMoveListener;
 import org.mcmaster01.listeners.PlayerSmashListener;
@@ -20,6 +22,8 @@ public void onEnable() {
     getServer().getPluginManager().registerEvents(new PlayerFlightListener(), this);
     getServer().getPluginManager().registerEvents(new PlayerSmashListener(), this);
     getServer().getPluginManager().registerEvents(new PlayerToggleSneakListener(), this);
+    getServer().getPluginManager().registerEvents(new PlayerInteractEntityListener(), this);
+    getServer().getPluginManager().registerEvents(new PlayerGrabListener(), this);
 } 
   
 
