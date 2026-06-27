@@ -1,4 +1,4 @@
-#SmashBros Minecraft PaperMC Plugin
+# SmashBros Minecraft PaperMC Plugin
 
 # Overview
 * This is the fun SmashBros Game but in Minecraft plugin.
