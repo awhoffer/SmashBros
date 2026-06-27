@@ -28,7 +28,7 @@ player.setVelocity(player.getLocation().getDirection().multiply(2).setY(1));
 player.setVelocity(player.getLocation().getDirection().multiply(2));
 } 
 //play jump sound
-player.playSound(player,Sound.ENTITY_IRON_GOLEM_STEP,1f,1.3f);       
+player.getWorld().playSound(player,Sound.ENTITY_IRON_GOLEM_STEP,1f,1.3f);       
     }
 
 }

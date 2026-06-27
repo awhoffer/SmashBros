@@ -12,6 +12,7 @@ import org.mcmaster01.events.PlayerSmashEvent;
 import com.destroystokyo.paper.ParticleBuilder;
 
 
+
 public class PlayerSmashListener implements Listener{
     
 
@@ -25,11 +26,11 @@ if(enemy.getUniqueId()!= player.getUniqueId()){
 //get the damage incurred and based on that deal knockback to shoot them backwards. Damage points will be added in entity hit event to determine. 
 //for now lets just shoot them back
 enemy.knockback(4, player.getLocation().getX(), player.getLocation().getZ());
+//add damage points to the scoreboard - this needs implemented
 }
 }
 );
-
-player.playSound(player,Sound.ITEM_MACE_SMASH_GROUND_HEAVY,1f,0f);
+player.getWorld().playSound(player,Sound.ITEM_MACE_SMASH_GROUND_HEAVY,1f,0f);
 //create the particle using builder
 ParticleBuilder particleBuilder = new ParticleBuilder(Particle.BLOCK_CRUMBLE)
 .location(player.getLocation())
