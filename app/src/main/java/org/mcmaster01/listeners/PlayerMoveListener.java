@@ -32,7 +32,7 @@ private void onPlayerDoubleJump(PlayerMoveEvent event){
         // Check if the player is standing on the ground before allowing for double jump
         if (blockBelow != Material.CAVE_AIR && blockBelow !=Material.AIR && !player.getAllowFlight()) {
         //check to see if meta data for playersmash was set to true. This meta data will be set when sneak is toggled in air. False otherwise.
-        if(player.getPersistentDataContainer().getOrDefault(new NamespacedKey(NamespacedKey.BUKKIT, "playersmash"), PersistentDataType.BOOLEAN,false)){
+        if(player.getPersistentDataContainer().getOrDefault(new NamespacedKey(NamespacedKey.BUKKIT,"playersmash"), PersistentDataType.BOOLEAN,false)){
             PlayerSmashEvent smashEvent = new PlayerSmashEvent(player);
             smashEvent.callEvent();
         }
